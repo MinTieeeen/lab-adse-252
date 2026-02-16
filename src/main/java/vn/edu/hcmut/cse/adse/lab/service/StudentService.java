@@ -19,4 +19,8 @@ public class StudentService {
     public StudentEntity getStudentById(String id){
         return repository.findById(id).orElse(null);
     }
+
+    public List<StudentEntity> searchByName(String name){
+        return repository.findByNameContainingIgnoreCase(name);
+    }
 }

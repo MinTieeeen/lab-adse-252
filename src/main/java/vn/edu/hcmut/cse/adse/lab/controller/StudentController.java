@@ -26,4 +26,6 @@ public class StudentController {
     public StudentEntity getStudentById(@PathVariable String id){
         return service.getStudentById(id);
     }
+
+    
 }
