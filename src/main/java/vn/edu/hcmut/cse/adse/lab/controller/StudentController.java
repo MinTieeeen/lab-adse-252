@@ -27,5 +27,4 @@ public class StudentController {
         return service.getStudentById(id);
     }
 
-    
 }
